@@ -1,3 +1,4 @@
+# Craete the Main Class for Points (x,y)
 class Point:
     def __init__(self, x, y):
         self.x = x
@@ -11,7 +12,9 @@ class Point:
             return True
         else:
             return False
-        
+
+# Secondary class for rectangle shapes & Coordinates
+
 class Rectangle:
     def __init__(self, lowleft, upright):
         self.lowleft = lowleft
@@ -19,6 +22,8 @@ class Rectangle:
 
     def area(self):
         return (self.upright.x - self.lowleft.x) * (self.upright.y - self.lowleft.y)
+
+# Create a random value for the X and Y axis
 
 from random import randint
 rectangle = Rectangle(Point(randint(0,9), randint(0,9)), Point(randint(10,19), randint(10, 19)))
